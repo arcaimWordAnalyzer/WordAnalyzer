@@ -1,0 +1,29 @@
+﻿@model WordAnalyzer.Infrastructure.Commands.LoadText
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>WordAnalyzer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="js/site.js"></script>
+</head>
+<body>
+    <div id="frontLogic">
+        <textarea id="textArea" name = "Text" >Enter text...</textarea>
+        <br>
+        <input id="loadOrder" type="button" value="Load text" style="float: left;">
+
+        <div id="buttons">
+            <button id="toXml" type="button">Generate XML</button>
+            <button id="toCsv" type="button">Generate CSV</button>
+        </div>
+    </div>
+    <div id="result">
+        <textarea id="output" style="border:none;"></textarea>
+    </div>
+    <div style="clear:both;"></div>
+</body>
+</html>
